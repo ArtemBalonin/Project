@@ -10,9 +10,11 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе целое число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-bool res = num1 == num2 * num2;
-if(res)
+if ( num1 == num2 * num2 )
 {
-
+    Console.Write("ДА");
 }
-Console.Write(res);
+else
+{
+    Console.Write("НЕТ");
+}
