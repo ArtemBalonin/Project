@@ -21,11 +21,22 @@
 
 // Второй вариант решения с помощью функции.
 
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// string YesNo(int num)
+// {
+//     return num % 7 == 0 && num % 23 == 0 ? "да" : "нет";
+// }
+// Console.Write(YesNo(num));
+
+// Третий вариант решения использую тип bool
+
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-string YesNo(int num)
+bool YesNo(int first, int second)
 {
-    return num % 7 == 0 && num % 23 == 0 ? "да" : "нет";
+    return first % second == 0;
 }
-Console.Write(YesNo(num));
+Console.Write(YesNo(num , 7) && YesNo(num, 23)? "да" : "нет");
