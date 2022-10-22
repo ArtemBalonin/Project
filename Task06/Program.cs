@@ -19,7 +19,6 @@ int FirstSecondNumber(int number)
 {
     int firstDigit = number / 100;
     int secondDigit = number % 10;
-    int result = firstDigit * 10 + secondDigit;
-    return result;
+    return firstDigit * 10 + secondDigit;
 }
 Console.Write($"Итоговое число = {FirstSecondNumber(num)}");
