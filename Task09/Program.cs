@@ -24,13 +24,28 @@
 
 // Второй вариант решения с помощью функции.
 
+// Console.Write("Введите первое число: ");
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int number2 = Convert.ToInt32(Console.ReadLine());
+
+// string YesNo(int number1, int number2)
+// {
+//     return number1 == number2 * number2 || number1 == number2 / number1 ? "да" : "нет";
+// }
+// Console.Write(YesNo(number1, number2));
+
+// Третий вариант решения с помощью bool.
+
 Console.Write("Введите первое число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-string YesNo(int number1, int number2)
+bool Square(int number1, int number2)
 {
-    return number1 == number2 * number2 || number1 == number2 / number1 ? "да" : "нет";
+    return number1 == number2 * number2 || number1 == number2 / number1;
 }
-Console.Write(YesNo(number1, number2));
+
+bool square = Square(number1, number2);
+Console.Write(square? "да" : "нет");
