@@ -30,9 +30,11 @@
 int[] CreateArray(int len)
 {
     int[] arr = new int[len];
+    Random rnd = new Random();  // Вынесли рандом из цикла, так как на мощном компьютере формируются
+                                // одинаковые числа!!!
     for (int i = 0; i < len; i++)
     {
-        arr[i] = new Random().Next(0,2);
+        arr[i] = rnd.Next(0,2);
     
     }
     return arr;
